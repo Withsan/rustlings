@@ -16,7 +16,12 @@
 // I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(number_of_apple: usize) -> usize {
+    if number_of_apple <= 40 {
+        return number_of_apple * 2;
+    }
+    number_of_apple
+}
 
 // Don't modify this function!
 #[test]
