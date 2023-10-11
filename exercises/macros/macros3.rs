@@ -8,13 +8,13 @@
 // I AM NOT DONE
 
 mod macros {
-   pub macro_rules! my_macro {
+    #[macro_export]
+    macro_rules! my_macro {
         () => {
             println!("Check out my macro!");
         };
     }
 }
-
 fn main() {
-    macros::my_macro!();
+    my_macro!();
 }
